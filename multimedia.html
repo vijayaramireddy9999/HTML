@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTI-MEDIA</title>
+</head>
+<style>
+    body{
+        background-color: rgba(61, 60, 60, 0.925);
+        color: white;
+        text-align: center;
+        border: 10px solid whitesmoke;
+    }
+
+    h2{
+        background-color: black;
+        padding: 20px;
+        border-radius: 25px;
+        margin: 0;
+    }
+
+    #nav{
+        height: 20px;
+        
+    }
+
+    #nav li {
+        display: inline;
+    }
+    li a{
+        color: white;
+        padding: 20px;
+       
+    }
+
+   li{
+    list-style: none;
+    width: 390px;
+    height: 200px;
+    gap: 50px;
+    display: inline-flex;
+    text-align: center;
+   }
+
+   h3{
+    background-color: black;
+    padding: 5px;
+    background-position: center;
+   }
+</style>
+<body>
+    <!--Multimedia web page -->
+    <!--It includes iframes ,audios ,videos & etc-->
+    <!--add autoplay ,muted att to iframes-->
+    <!--add controls to audio and video to work-->
+    <!--add autoplay , download,loop attr to video and audio tags.-->
+    <header>
+        <h2>Multi-Media Webpage</h2>
+            <ul id="nav">
+                <li><a href="#iframe" title="click here for IFRAME">IFRAME'S</a></li>
+                <li><a href="#video" title="click here for VIDEO'S">VIDEO'S</a></li>
+                <li><a href="#audio" title="Click here for AUDIO'S">AUDIO'S</a></li>
+            </ul>
+    </header>
+    <br>
+    <section>
+        <div id="iframe">
+            <h3>Iframe section</h3>
+            <ul>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dx4Teh-nv3A?si=Z_LnDhR6uT-RIBKl&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/autoplay=1&jMfvlh0tjyo?si=Ts4isZuciHo5t9dW&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+                <li>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dx4Teh-nv3A?si=Z_LnDhR6uT-RIBKl&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </li>
+            </ul>
+        </div>
+
+        <!-- video only supports mp3,mp4 file not direct youtube videos-->
+
+        <div id="video"> 
+            <h3>Videos section</h3>
+            <ul>
+                <li>
+                    <video controls autoplay muted >
+                        <source src="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4" type="video/mp4" >
+
+                    </video>
+                </li>
+                <li>
+                    <video controls autoplay muted>
+                        <source src="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4" type="video/mp4">
+                    </video>
+                </li>
+                <li>
+                    <video  controls autoplay muted>
+                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    </video>
+                </li>
+            </ul>
+        </div>
+        <!--audio only supports mp format src-->
+        <div id="audio">
+            <h3>Audio section</h3>
+            <ul id="ads">
+                <li>
+                    <audio controls autoplay muted loop>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+                <li>
+                    <audio controls autoplay muted loop>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+                <li>
+                    <audio controls autoplay muted loop download>
+                        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    </audio>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <h2>All rights resevered to VR &#169;2025</h3>
+    </footer>
+</body>
+</html>
